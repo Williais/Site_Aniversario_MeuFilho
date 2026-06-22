@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1º Aninho do Nikola - Convite Interativo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Fredoka:wght@400;600&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              toy: ["Lilita One", "cursive"],
+              fun: ["Fredoka", "sans-serif"],
+              sans: ["Nunito", "sans-serif"],
+            },
+            colors: {
+              toyYellow: "#FBC02D",
+              toyBlue: "#1976D2",
+              toyRed: "#D32F2F",
+              buzzGreen: "#4CAF50",
+              buzzPurple: "#7B1FA2",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .andy-bg { background-color: #5cb7e7; background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.2) 0%, transparent 80%); position: relative; overflow-x: hidden; }
+      .cloud-svg { position: absolute; fill: white; opacity: 0.85; filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1)); z-index: 0; pointer-events: none; }
+      .toy-title { text-shadow: -3px -3px 0 #003f88, 3px -3px 0 #003f88, -3px 3px 0 #003f88, 3px 3px 0 #003f88, -6px 6px 0 rgba(0, 0, 0, 0.3); }
+      .woody-pattern { background-color: #fffbdf; background-image: linear-gradient(90deg, rgba(211, 47, 47, 0.15) 10%, transparent 10%), linear-gradient(rgba(211, 47, 47, 0.15) 10%, transparent 10%); background-size: 20px 20px; }
+      .cow-print { background-color: #ffffff; background-image: radial-gradient(circle at 20% 30%, #1a1a1a 8%, transparent 12%), radial-gradient(circle at 75% 20%, #1a1a1a 12%, transparent 16%), radial-gradient(circle at 45% 75%, #1a1a1a 10%, transparent 14%), radial-gradient(circle at 85% 80%, #1a1a1a 7%, transparent 11%), radial-gradient(circle at 10% 85%, #1a1a1a 9%, transparent 13%); background-size: 150px 150px; }
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #f1f1f1; }
+      ::-webkit-scrollbar-thumb { background: #1976d2; border-radius: 4px; }
+      @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+      .floating-element { animation: float 4s ease-in-out infinite; }
+    </style>
+  </head>
+  <body class="andy-bg min-h-screen font-sans text-slate-800 flex justify-center items-center py-6 px-4">
+    
+    <svg class="cloud-svg w-32 h-20 top-12 left-6" viewBox="0 0 100 60"><path d="M20 50 C20 40, 30 35, 40 40 C45 30, 65 30, 70 40 C80 38, 90 45, 90 50 C95 55, 90 60, 80 60 L20 60 C10 60, 10 50, 20 50 Z"/></svg>
+    <svg class="cloud-svg w-48 h-28 top-40 -right-12" viewBox="0 0 100 60"><path d="M20 50 C20 40, 30 35, 40 40 C45 30, 65 30, 70 40 C80 38, 90 45, 90 50 C95 55, 90 60, 80 60 L20 60 C10 60, 10 50, 20 50 Z"/></svg>
+    <svg class="cloud-svg w-36 h-24 bottom-24 left-4" viewBox="0 0 100 60"><path d="M20 50 C20 40, 30 35, 40 40 C45 30, 65 30, 70 40 C80 38, 90 45, 90 50 C95 55, 90 60, 80 60 L20 60 C10 60, 10 50, 20 50 Z"/></svg>
+
+    <div class="relative w-full max-w-[420px] bg-slate-900 rounded-[45px] p-4 shadow-2xl border-4 border-slate-800 flex flex-col overflow-hidden z-10">
+      <div class="absolute top-2 left-1/2 -translate-x-1/2 w-32 h-5 bg-slate-800 rounded-b-xl z-50 flex justify-center items-center">
+        <span class="w-12 h-1 bg-slate-700 rounded-full"></span>
+      </div>
+
+      <div class="w-full bg-sky-100 rounded-[32px] overflow-y-auto overflow-x-hidden max-h-[85vh] relative flex flex-col" style="scrollbar-width: none">
+        
+        <div class="woody-pattern w-full py-8 px-4 flex flex-col items-center border-b-8 border-toyYellow relative shadow-md z-10">
+          <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none transform translate-y-full z-10">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-4 fill-toyYellow"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,42.4V0Z"></path></svg>
+          </div>
+
+          <div class="absolute -bottom-10 right-6 bg-toyYellow rounded-full p-2 border-4 border-toyBlue shadow-lg w-16 h-16 flex flex-col justify-center items-center text-center floating-element z-20">
+            <span class="text-[10px] font-fun font-bold text-toyBlue uppercase leading-none">Aninho</span>
+            <span id="inv-badge-age" class="text-3xl font-toy text-toyRed leading-none mt-1">1</span>
+          </div>
+
+          <div class="flex flex-col items-center text-center mt-3">
+            <div class="text-toyYellow text-4xl font-toy uppercase tracking-wider toy-title transform -rotate-3 mb-1">
+              <span id="inv-name-main">NIKOLA</span>
+            </div>
+            <div class="bg-toyRed text-white font-fun font-black px-4 py-0.5 rounded-full text-sm uppercase tracking-widest shadow-md transform rotate-2 border-2 border-white">
+              STORY
+            </div>
+          </div>
+
+          <p id="inv-subtitle-txt" class="text-sm font-semibold text-amber-900/90 mt-6 font-fun text-center max-w-[280px]">
+            Prepare-se para uma aventura mágica, pois vamos comemorar o meu primeiro aninho!
+          </p>
+        </div>
+
+        <div class="px-6 pt-8 pb-6 flex-1 flex flex-col justify-between items-center text-center relative z-10">
+          <div class="w-16 h-10 mb-1 opacity-90">
+            <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 5C38 5 32 15 32 25C32 27 34 29 38 29C44 29 46 25 50 25C54 25 56 29 62 29C66 29 68 27 68 25C68 15 62 5 50 5Z" fill="#A0522D"/><path d="M50 22C42 22 34 24 34 26C34 28 42 29 50 29C58 29 66 28 66 26C66 22 58 22 50 22Z" fill="#D2691E"/><path d="M10 32C10 30 15 28 30 28C45 28 50 30 50 32C50 34 45 36 30 36C15 36 10 34 10 32Z" fill="#A0522D"/><path d="M90 32C90 30 85 28 70 28C55 28 50 30 50 32C50 34 55 36 70 36C85 36 90 34 90 32Z" fill="#A0522D"/><path d="M30 28C30 28 35 32 50 32C65 32 70 28 70 28" stroke="#FFD700" stroke-width="2"/></svg>
+          </div>
+
+          <div class="space-y-1 my-2">
+            <h3 class="font-toy text-lg text-toyBlue uppercase tracking-wide">Ao Infinito e Além!</h3>
+            <p class="text-xs font-medium text-slate-600 px-3">
+              Minha primeira grande festa de brinquedos está prestes a começar. Junte-se ao Woody, ao Buzz e a toda a turma nesta grande aventura!
+            </p>
+          </div>
+
+          <div class="w-full bg-white/80 backdrop-blur border-2 border-toyYellow rounded-2xl p-4 shadow-sm my-3 flex flex-col items-center">
+            <div class="flex items-center gap-2 mb-2 text-toyRed">
+              <i class="fa-solid fa-calendar-star text-base"></i>
+              <span class="font-fun font-bold text-xs uppercase">Data & Hora</span>
+            </div>
+            <div class="grid grid-cols-2 w-full divide-x-2 divide-slate-200">
+              <div class="px-2">
+                <p id="inv-show-dayname" class="text-[10px] uppercase text-slate-400 font-bold"></p>
+                <p id="inv-show-day" class="text-2xl font-toy text-toyBlue"></p>
+                <p id="inv-show-month" class="text-xs font-semibold text-slate-500"></p>
+              </div>
+              <div class="px-2 flex flex-col justify-center items-center">
+                <p class="text-[10px] uppercase text-slate-400 font-bold">Início</p>
+                <p id="inv-show-time" class="text-xl font-toy text-toyBlue mt-1"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full my-1">
+            <p class="text-[9px] uppercase font-bold tracking-widest text-slate-400 mb-1.5">A brincadeira começa em:</p>
+            <div class="grid grid-cols-4 gap-2 px-4">
+              <div class="bg-slate-800 text-white p-2 rounded-xl flex flex-col items-center shadow-inner"><span id="cd-days" class="font-toy text-base leading-none">00</span><span class="text-[8px] text-slate-300 font-semibold uppercase mt-0.5">Dias</span></div>
+              <div class="bg-slate-800 text-white p-2 rounded-xl flex flex-col items-center shadow-inner"><span id="cd-hours" class="font-toy text-base leading-none">00</span><span class="text-[8px] text-slate-300 font-semibold uppercase mt-0.5">Horas</span></div>
+              <div class="bg-slate-800 text-white p-2 rounded-xl flex flex-col items-center shadow-inner"><span id="cd-mins" class="font-toy text-base leading-none">00</span><span class="text-[8px] text-slate-300 font-semibold uppercase mt-0.5">Min</span></div>
+              <div class="bg-slate-800 text-white p-2 rounded-xl flex flex-col items-center shadow-inner"><span id="cd-secs" class="font-toy text-base leading-none text-toyYellow animate-pulse">00</span><span class="text-[8px] text-slate-300 font-semibold uppercase mt-0.5">Seg</span></div>
+            </div>
+          </div>
+
+          <div class="w-full bg-white/80 backdrop-blur border-2 border-sky-300 rounded-2xl p-3.5 shadow-sm my-3 text-center">
+            <div class="flex items-center justify-center gap-2 mb-1 text-toyBlue">
+              <i class="fa-solid fa-map-location-dot text-base"></i>
+              <span class="font-fun font-bold text-xs uppercase">Onde será</span>
+            </div>
+            <p id="inv-show-venue" class="font-fun font-semibold text-slate-800 text-sm"></p>
+            <p id="inv-show-address" class="text-[11px] text-slate-500 mt-0.5"></p>
+          </div>
+
+          <div class="w-full space-y-2.5 mt-2">
+            <button onclick="openRSVPModal()" class="w-full bg-buzzGreen hover:bg-green-600 text-white py-3 px-6 rounded-2xl font-fun font-bold text-sm shadow-lg transition duration-200 transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-3 border-b-4 border-emerald-800">
+              <i class="fa-solid fa-user-check text-base"></i> Confirmar Presença
+            </button>
+            <button onclick="openGiftModal()" class="w-full bg-toyYellow hover:bg-amber-500 text-toyBlue py-3 px-6 rounded-2xl font-fun font-bold text-sm shadow-md transition duration-200 transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2 border-b-4 border-amber-700">
+              <i class="fa-solid fa-gift text-base text-toyRed animate-bounce"></i> Dicas de Presente
+            </button>
+            <button onclick="openLocation()" class="w-full bg-toyBlue hover:bg-sky-600 text-white py-2.5 px-6 rounded-2xl font-fun font-bold text-xs shadow-md transition duration-200 transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2 border-b-4 border-blue-900">
+              <i class="fa-solid fa-route text-sm text-toyYellow"></i> Ver no Mapa / GPS
+            </button>
+          </div>
+        </div>
+
+        <div class="cow-print w-full py-5 flex justify-center items-center border-t-8 border-toyYellow relative shadow-inner">
+          <div class="bg-toyRed/90 text-white font-toy text-xs px-4 py-1.5 rounded-full shadow border border-white uppercase tracking-widest">
+            Amigo, estou aqui! 🧸🤠🚀
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="rsvp-modal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+      <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl border-4 border-buzzPurple relative transform transition scale-95 duration-200">
+        <div class="absolute -top-12 left-1/2 -translate-x-1/2 bg-buzzPurple text-white p-3.5 rounded-full border-4 border-white shadow-xl">
+          <i class="fa-solid fa-rocket text-2xl text-toyYellow"></i>
+        </div>
+        <div class="text-center mt-4 mb-5">
+          <h3 class="font-toy text-2xl text-buzzPurple uppercase tracking-wide">Confirmar Presença</h3>
+          <p class="text-xs text-slate-500 font-medium">Avisar os organizadores sobre sua vinda!</p>
+        </div>
+        <div id="rsvp-error" class="hidden bg-red-50 text-toyRed border border-red-200 text-xs font-semibold py-1.5 px-3 rounded-lg mb-4 text-center">
+          Por favor, escreva o seu nome para confirmar! 😊
+        </div>
+        <div class="space-y-4">
+          <div>
+            <label class="block text-xs font-fun font-semibold text-slate-600 mb-1">Seu Nome Completo</label>
+            <input type="text" id="rsvp-name" class="w-full px-4 py-2 border-2 border-slate-200 rounded-xl focus:outline-none focus:border-buzzPurple font-medium text-slate-800 transition" placeholder="Ex: Maria Souza" oninput="document.getElementById('rsvp-error').classList.add('hidden')" />
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-fun font-semibold text-slate-600 mb-1">Adultos (com você)</label>
+              <select id="rsvp-adults" class="w-full px-3 py-2 border-2 border-slate-200 rounded-xl focus:outline-none focus:border-buzzPurple font-medium text-slate-800 transition">
+                <option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-fun font-semibold text-slate-600 mb-1">Crianças (se houver)</label>
+              <select id="rsvp-kids" class="w-full px-3 py-2 border-2 border-slate-200 rounded-xl focus:outline-none focus:border-buzzPurple font-medium text-slate-800 transition">
+                <option value="0" selected>Nenhuma</option><option value="1">1 Criança</option><option value="2">2 Crianças</option><option value="3">3 Crianças</option><option value="4">4 Crianças</option>
+              </select>
+            </div>
+          </div>
+          <div class="bg-purple-50 p-2.5 rounded-xl border border-purple-100 text-center">
+            <p class="text-[10px] text-buzzPurple font-bold">Geraremos uma mensagem automática para o WhatsApp.</p>
+          </div>
+          <div class="flex gap-2 pt-1">
+            <button onclick="closeRSVPModal()" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-600 font-fun font-semibold py-2.5 rounded-xl transition duration-200 text-xs">Voltar</button>
+            <button onclick="sendRSVPWhatsApp()" class="flex-1 bg-buzzGreen hover:bg-green-600 text-white font-fun font-semibold py-2.5 rounded-xl transition duration-200 flex items-center justify-center gap-1.5 text-xs shadow border-b-4 border-emerald-800"><i class="fa-brands fa-whatsapp"></i> Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gift-modal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+      <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl border-4 border-toyYellow relative transform transition scale-95 duration-200">
+        <div class="absolute -top-12 left-1/2 -translate-x-1/2 bg-toyYellow text-toyBlue p-3 rounded-full border-4 border-white shadow-xl w-16 h-16 flex items-center justify-center">
+          <i class="fa-solid fa-star text-2xl text-toyRed animate-pulse"></i>
+        </div>
+        <div class="text-center mt-5 mb-5">
+          <h3 class="font-toy text-xl text-toyBlue uppercase tracking-wide">Tamanhos do Nikola</h3>
+          <p class="text-xs text-slate-500 font-medium">Se você deseja presentear o aniversariante, aqui estão as sugestões:</p>
+        </div>
+        <div class="space-y-3.5 my-4">
+          <div class="flex items-center gap-4 bg-amber-50 p-3 rounded-2xl border border-amber-200">
+            <div class="bg-toyRed/10 text-toyRed p-3 rounded-xl"><i class="fa-solid fa-socks text-2xl"></i></div>
+            <div><p class="text-[11px] font-bold text-amber-900 uppercase tracking-wider">Número do Calçado</p><p id="inv-show-shoe" class="text-xl font-toy text-toyBlue"></p></div>
+          </div>
+          <div class="flex items-center gap-4 bg-sky-50 p-3 rounded-2xl border border-sky-100">
+            <div class="bg-toyBlue/10 text-toyBlue p-3 rounded-xl"><i class="fa-solid fa-shirt text-2xl"></i></div>
+            <div><p class="text-[11px] font-bold text-sky-900 uppercase tracking-wider">Tamanho de Roupinha</p><p id="inv-show-clothes" class="text-xl font-toy text-toyRed"></p></div>
+          </div>
+          <div class="bg-slate-50 p-2.5 rounded-xl text-center border border-slate-100 text-[10px] text-slate-500 font-medium">
+            Sua presença é o maior presente de todos! Esperamos você! 📦🧸
+          </div>
+        </div>
+        <button onclick="closeGiftModal()" class="w-full bg-toyBlue hover:bg-sky-600 text-white font-fun font-bold py-2.5 rounded-xl transition duration-200 text-sm shadow border-b-4 border-blue-900">Entendido!</button>
+      </div>
+    </div>
+
+    <script>
+      // ⚠️ COLOQUE OS DADOS REAIS AQUI ⚠️
+      const config = {
+        name: "Nikola Vicente",
+        age: "1",
+        shoeSize: "19/21",
+        clothesSize: "Acima de 1 ano",
+        date: "2026-07-12",
+        time: "16:00",
+        venue: "Área de lazer Venâncio",
+        address: "R. Rita Rodrigues de Albuquerque - Jardim Carolina, Santa Rita - PB",
+        maps: "", // Cole o link do Google Maps aqui (se deixar vazio, ele pesquisa o endereço acima no GPS)
+        phone: "83987341374", // Apenas números, com o DDD
+      };
+
+      const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+      const dayNames = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+
+      window.onload = function () {
+        document.getElementById("inv-name-main").innerText = config.name.toUpperCase();
+        document.getElementById("inv-badge-age").innerText = config.age;
+        document.getElementById("inv-show-time").innerText = config.time + "h";
+        document.getElementById("inv-show-venue").innerText = config.venue;
+        document.getElementById("inv-show-address").innerText = config.address;
+        document.getElementById("inv-show-shoe").innerText = config.shoeSize;
+        document.getElementById("inv-show-clothes").innerText = config.clothesSize;
+
+        const dateObj = new Date(config.date + "T00:00:00");
+        if (!isNaN(dateObj)) {
+          document.getElementById("inv-show-day").innerText = dateObj.getDate();
+          document.getElementById("inv-show-month").innerText = monthNames[dateObj.getMonth()];
+          document.getElementById("inv-show-dayname").innerText = dayNames[dateObj.getDay()];
+        }
+        startCountdown();
+      };
+
+      let countdownInterval;
+      function startCountdown() {
+        if (countdownInterval) clearInterval(countdownInterval);
+        function updateTimer() {
+          const target = new Date(`${config.date}T${config.time}:00`).getTime();
+          const diff = target - new Date().getTime();
+          if (diff <= 0) {
+            document.getElementById("cd-days").innerText = "00"; document.getElementById("cd-hours").innerText = "00"; document.getElementById("cd-mins").innerText = "00"; document.getElementById("cd-secs").innerText = "00";
+            return;
+          }
+          document.getElementById("cd-days").innerText = String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, "0");
+          document.getElementById("cd-hours").innerText = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, "0");
+          document.getElementById("cd-mins").innerText = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, "0");
+          document.getElementById("cd-secs").innerText = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, "0");
+        }
+        updateTimer();
+        countdownInterval = setInterval(updateTimer, 1000);
+      }
+
+      function openLocation() {
+        const query = encodeURIComponent(`${config.venue}, ${config.address}`);
+        window.open(config.maps.trim() !== "" ? config.maps : `https://www.google.com/maps/search/?api=1&query=${query}`, "_blank");
+      }
+
+      function openRSVPModal() { document.getElementById("rsvp-error").classList.add("hidden"); document.getElementById("rsvp-modal").classList.remove("hidden"); }
+      function closeRSVPModal() { document.getElementById("rsvp-modal").classList.add("hidden"); }
+      function openGiftModal() { document.getElementById("gift-modal").classList.remove("hidden"); }
+      function closeGiftModal() { document.getElementById("gift-modal").classList.add("hidden"); }
+
+      function sendRSVPWhatsApp() {
+        const guest = document.getElementById("rsvp-name").value.trim();
+        const adults = document.getElementById("rsvp-adults").value;
+        const kids = document.getElementById("rsvp-kids").value;
+        if (!guest) { document.getElementById("rsvp-error").classList.remove("hidden"); return; }
+
+        const msg = `🚀 *Confirmação de Presença - Nikola Story* 🚀\n\nOlá! Estou confirmando minha presença na festa de *1º Aninho* do *${config.name}*!\n\n👤 *Convidado:* ${guest}\n👥 *Total de Adultos:* ${adults}\n👶 *Crianças:* ${kids === "0" ? "Nenhuma" : kids}\n\n_Estaremos prontos para ir ao infinito e além!_ 🧸⭐`;
+        window.open(`https://api.whatsapp.com/send?phone=55${config.phone.replace(/\D/g, "")}&text=${encodeURIComponent(msg)}`, "_blank");
+        closeRSVPModal();
+      }
+    </script>
+  </body>
+</html>
