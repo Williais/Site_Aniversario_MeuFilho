@@ -46,103 +46,91 @@
     <svg class="cloud-svg w-48 h-28 top-40 -right-12" viewBox="0 0 100 60"><path d="M20 50 C20 40, 30 35, 40 40 C45 30, 65 30, 70 40 C80 38, 90 45, 90 50 C95 55, 90 60, 80 60 L20 60 C10 60, 10 50, 20 50 Z"/></svg>
     <svg class="cloud-svg w-36 h-24 bottom-24 left-4" viewBox="0 0 100 60"><path d="M20 50 C20 40, 30 35, 40 40 C45 30, 65 30, 70 40 C80 38, 90 45, 90 50 C95 55, 90 60, 80 60 L20 60 C10 60, 10 50, 20 50 Z"/></svg>
 
-    <div class="relative w-full max-w-[420px] bg-slate-900 rounded-[45px] p-4 shadow-2xl border-4 border-slate-800 flex flex-col overflow-hidden z-10">
-      <div class="absolute top-2 left-1/2 -translate-x-1/2 w-32 h-5 bg-slate-800 rounded-b-xl z-50 flex justify-center items-center">
-        <span class="w-12 h-1 bg-slate-700 rounded-full"></span>
+    <div class="w-full max-w-md bg-sky-100 rounded-3xl shadow-2xl border-4 border-white overflow-hidden z-10 flex flex-col">
+      <div class="woody-pattern w-full py-8 px-4 flex flex-col items-center border-b-8 border-toyYellow relative shadow-md z-10">
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none transform translate-y-full z-10">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-4 fill-toyYellow"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,42.4V0Z"></path></svg>
+        </div>
+        <div class="absolute -bottom-10 right-6 bg-toyYellow rounded-full p-2 border-4 border-toyBlue shadow-lg w-16 h-16 flex flex-col justify-center items-center text-center floating-element z-20">
+          <span class="text-[10px] font-fun font-bold text-toyBlue uppercase leading-none">Aninho</span>
+          <span id="inv-badge-age" class="text-3xl font-toy text-toyRed leading-none mt-1">1</span>
+        </div>
+        <div class="flex flex-col items-center text-center mt-3">
+          <div class="text-toyYellow text-4xl font-toy uppercase tracking-wider toy-title transform -rotate-3 mb-1">
+            <span id="inv-name-main">NIKOLA</span>
+          </div>
+          <div class="bg-toyRed text-white font-fun font-black px-4 py-0.5 rounded-full text-sm uppercase tracking-widest shadow-md transform rotate-2 border-2 border-white">
+            STORY
+          </div>
+        </div>
+        <p id="inv-subtitle-txt" class="text-sm font-semibold text-amber-900/90 mt-6 font-fun text-center max-w-[280px]">
+          Prepare-se para uma aventura mágica, pois vamos comemorar o meu primeiro aninho!
+        </p>
       </div>
 
-      <div class="w-full bg-sky-100 rounded-[32px] overflow-y-auto overflow-x-hidden max-h-[85vh] relative flex flex-col" style="scrollbar-width: none">
-        
-        <div class="woody-pattern w-full py-8 px-4 flex flex-col items-center border-b-8 border-toyYellow relative shadow-md z-10">
-          <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none transform translate-y-full z-10">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-4 fill-toyYellow"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,42.4V0Z"></path></svg>
-          </div>
-
-          <div class="absolute -bottom-10 right-6 bg-toyYellow rounded-full p-2 border-4 border-toyBlue shadow-lg w-16 h-16 flex flex-col justify-center items-center text-center floating-element z-20">
-            <span class="text-[10px] font-fun font-bold text-toyBlue uppercase leading-none">Aninho</span>
-            <span id="inv-badge-age" class="text-3xl font-toy text-toyRed leading-none mt-1">1</span>
-          </div>
-
-          <div class="flex flex-col items-center text-center mt-3">
-            <div class="text-toyYellow text-4xl font-toy uppercase tracking-wider toy-title transform -rotate-3 mb-1">
-              <span id="inv-name-main">NIKOLA</span>
-            </div>
-            <div class="bg-toyRed text-white font-fun font-black px-4 py-0.5 rounded-full text-sm uppercase tracking-widest shadow-md transform rotate-2 border-2 border-white">
-              STORY
-            </div>
-          </div>
-
-          <p id="inv-subtitle-txt" class="text-sm font-semibold text-amber-900/90 mt-6 font-fun text-center max-w-[280px]">
-            Prepare-se para uma aventura mágica, pois vamos comemorar o meu primeiro aninho!
+      <div class="px-6 pt-8 pb-6 flex-1 flex flex-col justify-between items-center text-center relative z-10">
+        <div class="w-16 h-10 mb-1 opacity-90">
+          <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 5C38 5 32 15 32 25C32 27 34 29 38 29C44 29 46 25 50 25C54 25 56 29 62 29C66 29 68 27 68 25C68 15 62 5 50 5Z" fill="#A0522D"/><path d="M50 22C42 22 34 24 34 26C34 28 42 29 50 29C58 29 66 28 66 26C66 22 58 22 50 22Z" fill="#D2691E"/><path d="M10 32C10 30 15 28 30 28C45 28 50 30 50 32C50 34 45 36 30 36C15 36 10 34 10 32Z" fill="#A0522D"/><path d="M90 32C90 30 85 28 70 28C55 28 50 30 50 32C50 34 55 36 70 36C85 36 90 34 90 32Z" fill="#A0522D"/><path d="M30 28C30 28 35 32 50 32C65 32 70 28 70 28" stroke="#FFD700" stroke-width="2"/></svg>
+        </div>
+        <div class="space-y-1 my-2">
+          <h3 class="font-toy text-lg text-toyBlue uppercase tracking-wide">Ao Infinito e Além!</h3>
+          <p class="text-xs font-medium text-slate-600 px-3">
+            Minha primeira grande festa de brinquedos está prestes a começar. Junte-se ao Woody, ao Buzz e a toda a turma nesta grande aventura!
           </p>
         </div>
-
-        <div class="px-6 pt-8 pb-6 flex-1 flex flex-col justify-between items-center text-center relative z-10">
-          <div class="w-16 h-10 mb-1 opacity-90">
-            <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 5C38 5 32 15 32 25C32 27 34 29 38 29C44 29 46 25 50 25C54 25 56 29 62 29C66 29 68 27 68 25C68 15 62 5 50 5Z" fill="#A0522D"/><path d="M50 22C42 22 34 24 34 26C34 28 42 29 50 29C58 29 66 28 66 26C66 22 58 22 50 22Z" fill="#D2691E"/><path d="M10 32C10 30 15 28 30 28C45 28 50 30 50 32C50 34 45 36 30 36C15 36 10 34 10 32Z" fill="#A0522D"/><path d="M90 32C90 30 85 28 70 28C55 28 50 30 50 32C50 34 55 36 70 36C85 36 90 34 90 32Z" fill="#A0522D"/><path d="M30 28C30 28 35 32 50 32C65 32 70 28 70 28" stroke="#FFD700" stroke-width="2"/></svg>
+        <div class="w-full bg-white/80 backdrop-blur border-2 border-toyYellow rounded-2xl p-4 shadow-sm my-3 flex flex-col items-center">
+          <div class="flex items-center gap-2 mb-2 text-toyRed">
+            <i class="fa-solid fa-calendar-star text-base"></i>
+            <span class="font-fun font-bold text-xs uppercase">Data & Hora</span>
           </div>
-
-          <div class="space-y-1 my-2">
-            <h3 class="font-toy text-lg text-toyBlue uppercase tracking-wide">Ao Infinito e Além!</h3>
-            <p class="text-xs font-medium text-slate-600 px-3">
-              Minha primeira grande festa de brinquedos está prestes a começar. Junte-se ao Woody, ao Buzz e a toda a turma nesta grande aventura!
-            </p>
-          </div>
-
-          <div class="w-full bg-white/80 backdrop-blur border-2 border-toyYellow rounded-2xl p-4 shadow-sm my-3 flex flex-col items-center">
-            <div class="flex items-center gap-2 mb-2 text-toyRed">
-              <i class="fa-solid fa-calendar-star text-base"></i>
-              <span class="font-fun font-bold text-xs uppercase">Data & Hora</span>
+          <div class="grid grid-cols-2 w-full divide-x-2 divide-slate-200">
+            <div class="px-2">
+              <p id="inv-show-dayname" class="text-[10px] uppercase text-slate-400 font-bold"></p>
+              <p id="inv-show-day" class="text-2xl font-toy text-toyBlue"></p>
+              <p id="inv-show-month" class="text-xs font-semibold text-slate-500"></p>
             </div>
-            <div class="grid grid-cols-2 w-full divide-x-2 divide-slate-200">
-              <div class="px-2">
-                <p id="inv-show-dayname" class="text-[10px] uppercase text-slate-400 font-bold"></p>
-                <p id="inv-show-day" class="text-2xl font-toy text-toyBlue"></p>
-                <p id="inv-show-month" class="text-xs font-semibold text-slate-500"></p>
-              </div>
-              <div class="px-2 flex flex-col justify-center items-center">
-                <p class="text-[10px] uppercase text-slate-400 font-bold">Início</p>
-                <p id="inv-show-time" class="text-xl font-toy text-toyBlue mt-1"></p>
-              </div>
+            <div class="px-2 flex flex-col justify-center items-center">
+              <p class="text-[10px] uppercase text-slate-400 font-bold">Início</p>
+              <p id="inv-show-time" class="text-xl font-toy text-toyBlue mt-1"></p>
             </div>
-          </div>
-
-          <div class="w-full my-1">
-            <p class="text-[9px] uppercase font-bold tracking-widest text-slate-400 mb-1.5">A brincadeira começa em:</p>
-            <div class="grid grid-cols-4 gap-2 px-4">
-              <div class="bg-slate-800 text-white p-2 rounded-xl flex flex-col items-center shadow-inner"><span id="cd-days" class="font-toy text-base leading-none">00</span><span class="text-[8px] text-slate-300 font-semibold uppercase mt-0.5">Dias</span></div>
-              <div class="bg-slate-800 text-white p-2 rounded-xl flex flex-col items-center shadow-inner"><span id="cd-hours" class="font-toy text-base leading-none">00</span><span class="text-[8px] text-slate-300 font-semibold uppercase mt-0.5">Horas</span></div>
-              <div class="bg-slate-800 text-white p-2 rounded-xl flex flex-col items-center shadow-inner"><span id="cd-mins" class="font-toy text-base leading-none">00</span><span class="text-[8px] text-slate-300 font-semibold uppercase mt-0.5">Min</span></div>
-              <div class="bg-slate-800 text-white p-2 rounded-xl flex flex-col items-center shadow-inner"><span id="cd-secs" class="font-toy text-base leading-none text-toyYellow animate-pulse">00</span><span class="text-[8px] text-slate-300 font-semibold uppercase mt-0.5">Seg</span></div>
-            </div>
-          </div>
-
-          <div class="w-full bg-white/80 backdrop-blur border-2 border-sky-300 rounded-2xl p-3.5 shadow-sm my-3 text-center">
-            <div class="flex items-center justify-center gap-2 mb-1 text-toyBlue">
-              <i class="fa-solid fa-map-location-dot text-base"></i>
-              <span class="font-fun font-bold text-xs uppercase">Onde será</span>
-            </div>
-            <p id="inv-show-venue" class="font-fun font-semibold text-slate-800 text-sm"></p>
-            <p id="inv-show-address" class="text-[11px] text-slate-500 mt-0.5"></p>
-          </div>
-
-          <div class="w-full space-y-2.5 mt-2">
-            <button onclick="openRSVPModal()" class="w-full bg-buzzGreen hover:bg-green-600 text-white py-3 px-6 rounded-2xl font-fun font-bold text-sm shadow-lg transition duration-200 transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-3 border-b-4 border-emerald-800">
-              <i class="fa-solid fa-user-check text-base"></i> Confirmar Presença
-            </button>
-            <button onclick="openGiftModal()" class="w-full bg-toyYellow hover:bg-amber-500 text-toyBlue py-3 px-6 rounded-2xl font-fun font-bold text-sm shadow-md transition duration-200 transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2 border-b-4 border-amber-700">
-              <i class="fa-solid fa-gift text-base text-toyRed animate-bounce"></i> Dicas de Presente
-            </button>
-            <button onclick="openLocation()" class="w-full bg-toyBlue hover:bg-sky-600 text-white py-2.5 px-6 rounded-2xl font-fun font-bold text-xs shadow-md transition duration-200 transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2 border-b-4 border-blue-900">
-              <i class="fa-solid fa-route text-sm text-toyYellow"></i> Ver no Mapa / GPS
-            </button>
           </div>
         </div>
 
-        <div class="cow-print w-full py-5 flex justify-center items-center border-t-8 border-toyYellow relative shadow-inner">
-          <div class="bg-toyRed/90 text-white font-toy text-xs px-4 py-1.5 rounded-full shadow border border-white uppercase tracking-widest">
-            Amigo, estou aqui! 🧸🤠🚀
+        <div class="w-full my-1">
+          <p class="text-[9px] uppercase font-bold tracking-widest text-slate-400 mb-1.5">A brincadeira começa em:</p>
+          <div class="grid grid-cols-4 gap-2 px-4">
+            <div class="bg-slate-800 text-white p-2 rounded-xl flex flex-col items-center shadow-inner"><span id="cd-days" class="font-toy text-base leading-none">00</span><span class="text-[8px] text-slate-300 font-semibold uppercase mt-0.5">Dias</span></div>
+            <div class="bg-slate-800 text-white p-2 rounded-xl flex flex-col items-center shadow-inner"><span id="cd-hours" class="font-toy text-base leading-none">00</span><span class="text-[8px] text-slate-300 font-semibold uppercase mt-0.5">Horas</span></div>
+            <div class="bg-slate-800 text-white p-2 rounded-xl flex flex-col items-center shadow-inner"><span id="cd-mins" class="font-toy text-base leading-none">00</span><span class="text-[8px] text-slate-300 font-semibold uppercase mt-0.5">Min</span></div>
+            <div class="bg-slate-800 text-white p-2 rounded-xl flex flex-col items-center shadow-inner"><span id="cd-secs" class="font-toy text-base leading-none text-toyYellow animate-pulse">00</span><span class="text-[8px] text-slate-300 font-semibold uppercase mt-0.5">Seg</span></div>
           </div>
+        </div>
+
+        <div class="w-full bg-white/80 backdrop-blur border-2 border-sky-300 rounded-2xl p-3.5 shadow-sm my-3 text-center">
+          <div class="flex items-center justify-center gap-2 mb-1 text-toyBlue">
+            <i class="fa-solid fa-map-location-dot text-base"></i>
+            <span class="font-fun font-bold text-xs uppercase">Onde será</span>
+          </div>
+          <p id="inv-show-venue" class="font-fun font-semibold text-slate-800 text-sm"></p>
+          <p id="inv-show-address" class="text-[11px] text-slate-500 mt-0.5"></p>
+        </div>
+
+        <div class="w-full space-y-2.5 mt-2">
+          <button onclick="openRSVPModal()" class="w-full bg-buzzGreen hover:bg-green-600 text-white py-3 px-6 rounded-2xl font-fun font-bold text-sm shadow-lg transition duration-200 transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-3 border-b-4 border-emerald-800">
+            <i class="fa-solid fa-user-check text-base"></i> Confirmar Presença
+          </button>
+          <button onclick="openGiftModal()" class="w-full bg-toyYellow hover:bg-amber-500 text-toyBlue py-3 px-6 rounded-2xl font-fun font-bold text-sm shadow-md transition duration-200 transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2 border-b-4 border-amber-700">
+            <i class="fa-solid fa-gift text-base text-toyRed animate-bounce"></i> Dicas de Presente
+          </button>
+          <button onclick="openLocation()" class="w-full bg-toyBlue hover:bg-sky-600 text-white py-2.5 px-6 rounded-2xl font-fun font-bold text-xs shadow-md transition duration-200 transform hover:scale-[1.01] active:scale-[0.99] flex items-center justify-center gap-2 border-b-4 border-blue-900">
+            <i class="fa-solid fa-route text-sm text-toyYellow"></i> Ver no Mapa / GPS
+          </button>
+        </div>
+      </div>
+
+      <div class="cow-print w-full py-5 flex justify-center items-center border-t-8 border-toyYellow relative shadow-inner">
+        <div class="bg-toyRed/90 text-white font-toy text-xs px-4 py-1.5 rounded-full shadow border border-white uppercase tracking-widest">
+          Amigo, estou aqui! 🧸🤠🚀
         </div>
       </div>
     </div>
@@ -216,7 +204,6 @@
     </div>
 
     <script>
-      // ⚠️ COLOQUE OS DADOS REAIS AQUI ⚠️
       const config = {
         name: "Nikola Vicente",
         age: "1",
@@ -226,8 +213,9 @@
         time: "16:00",
         venue: "Área de lazer Venâncio",
         address: "R. Rita Rodrigues de Albuquerque - Jardim Carolina, Santa Rita - PB",
-        maps: "", // Cole o link do Google Maps aqui (se deixar vazio, ele pesquisa o endereço acima no GPS)
-        phone: "83987341374", // Apenas números, com o DDD
+        maps: "", 
+        phone: "83987341374",
+        googleSheetUrl:"https://script.google.com/macros/s/AKfycbxlX5YcA5RvpeffNAkfcsaoEJM4KC-t7HZN-m9Vj003h6Xb1YKQwId3vmBqkhjZF97-Sg/exec" 
       };
 
       const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
@@ -285,6 +273,11 @@
         const adults = document.getElementById("rsvp-adults").value;
         const kids = document.getElementById("rsvp-kids").value;
         if (!guest) { document.getElementById("rsvp-error").classList.remove("hidden"); return; }
+
+        if (config.googleSheetUrl.trim() !== "") {
+          const urlWithParams = `${config.googleSheetUrl}?nome=${encodeURIComponent(guest)}&adultos=${encodeURIComponent(adults)}&criancas=${encodeURIComponent(kids)}`;
+          fetch(urlWithParams, { mode: "no-cors" }).catch(() => {});
+        }
 
         const msg = `🚀 *Confirmação de Presença - Nikola Story* 🚀\n\nOlá! Estou confirmando minha presença na festa de *1º Aninho* do *${config.name}*!\n\n👤 *Convidado:* ${guest}\n👥 *Total de Adultos:* ${adults}\n👶 *Crianças:* ${kids === "0" ? "Nenhuma" : kids}\n\n_Estaremos prontos para ir ao infinito e além!_ 🧸⭐`;
         window.open(`https://api.whatsapp.com/send?phone=55${config.phone.replace(/\D/g, "")}&text=${encodeURIComponent(msg)}`, "_blank");
